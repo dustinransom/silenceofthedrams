@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  {% feed_meta %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="{{ '/' | relative_url }}">Silence of the Drams</a>
+    <nav>
+      <a href="{{ '/reviews/' | relative_url }}">Reviews</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ site.substack_url }}">Subscribe</a>
+    </nav>
+  </header>
+  <main>{{ content }}</main>
+  <footer class="site-footer">
+    <p>© {{ 'now' | date: '%Y' }} Silence of the Drams · <a href="{{ site.substack_url }}">Roundup newsletter</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  </footer>
+</body>
+</html>

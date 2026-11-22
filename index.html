@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>Silence of the Drams</h1>
+  <p>{{ site.tagline }}</p>
+  <p class="cta">
+    <a class="button" href="{{ site.substack_url }}">Get the roundup by email</a>
+    <a class="button ghost" href="{{ '/reviews/' | relative_url }}">Browse the archive</a>
+  </p>
+</section>
+
+<section>
+  <h2>Latest</h2>
+  {% assign latest = site.reviews | sort: "date" | reverse %}
+  <ul class="cards">
+  {% for r in latest limit: 6 %}
+    <li>
+      <a href="{{ r.url | relative_url }}">
+        <span class="eyebrow">{{ r.type | capitalize }}</span>
+        <strong>{{ r.title }}</strong>
+        {% if r.score %}<span class="score-sm">{{ r.score }}{% if r.score_scale and r.score_scale != site.score_max %}/{{ r.score_scale }}{% endif %}</span>{% endif %}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

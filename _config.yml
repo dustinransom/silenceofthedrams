@@ -1,0 +1,39 @@
+title: Silence of the Drams
+tagline: Whisky, wine & dining — tasted honestly.
+description: Reviews of whisky (mostly scotch), wine, and restaurants.
+url: "https://silenceofthedrams.com"
+baseurl: ""
+
+# Substack: periodic roundup newsletter, not every review (update once live)
+substack_url: "https://posts.silenceofthedrams.com"
+
+# RSS feed of reviews (free, built into GitHub Pages)
+plugins:
+  - jekyll-feed
+feed:
+  collections:
+    reviews:
+      path: "/feed.xml"
+
+# Default scoring scale (5-star). Older reviews set score_scale: 10 individually.
+score_max: 5
+
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: reviews
+    values:
+      layout: review
+
+exclude:
+  - templates/
+  - imports/
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock

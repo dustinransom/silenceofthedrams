@@ -1,0 +1,27 @@
+---
+layout: default
+title: Reviews
+---
+<h1>All reviews</h1>
+<div class="filters">
+  <input id="q" type="search" placeholder="Search name, distillery, region, tag…">
+  <select id="type">
+    <option value="">All types</option>
+    <option value="whisky">Whisky</option>
+    <option value="wine">Wine</option>
+    <option value="dining">Dining</option>
+  </select>
+  <select id="sort">
+    <option value="date">Newest first</option>
+    <option value="score">Highest score</option>
+  </select>
+  <span id="count" class="muted"></span>
+</div>
+<table class="archive">
+  <thead><tr><th>Name</th><th>Type</th><th>Region / City</th><th class="num">Score</th><th class="num">Published</th></tr></thead>
+  <tbody id="rows">
+  {% assign all = site.reviews | sort: "date" | reverse %}
+  {% for r in all %}{% include review-row.html %}{% endfor %}
+  </tbody>
+</table>
+<script src="{{ '/assets/js/filter.js' | relative_url }}"></script>

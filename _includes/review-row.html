@@ -1,0 +1,9 @@
+{% assign scale = r.score_scale | default: site.score_max %}
+{% if r.score %}{% assign norm = r.score | times: 5.0 | divided_by: scale %}{% else %}{% assign norm = 0 %}{% endif %}
+<tr data-type="{{ r.type }}" data-score="{{ norm }}" data-date="{{ r.date | date: '%Y-%m-%d' }}" data-search="{{ r.title | downcase | escape }} {{ r.distillery | downcase }} {{ r.bottler | downcase }} {{ r.producer | downcase }} {{ r.region | downcase }} {{ r.country | downcase }} {{ r.city | downcase }} {{ r.tags | join: ' ' | downcase }}">
+  <td><a href="{{ r.url | relative_url }}">{{ r.title }}</a></td>
+  <td class="muted">{{ r.type | capitalize }}</td>
+  <td class="muted">{{ r.region | default: r.country | default: r.city }}</td>
+  <td class="num">{% if r.score %}{{ r.score }}{% if scale != site.score_max %}<span class="muted">/{{ scale }}</span>{% endif %}{% elsif r.scores %}<span class="muted">flight</span>{% endif %}</td>
+  <td class="muted num">{{ r.date | date: "%b %Y" }}</td>
+</tr>
