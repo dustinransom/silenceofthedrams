@@ -11,7 +11,7 @@ age: ""
 abv: 58
 cask: "Bourbon, Re-racked refill sherry octave"
 price: ""
-score: 4
+score: 5
 score_scale: 5
 mental_image: "Longing for Islay."
 date_tasted:
@@ -33,6 +33,6 @@ The finish is satisfying. All of the previous notes in harmony, just melding and
 
 Stunningly composed. Magnificent. Nearly peak whisky, and basically everything I love about Bruichladdich. I'm grateful to add this cask's story to my Bruichladdich "collection" if only in memory. The mouthfeel could be a bit more robust and oily, and I could do with a touch more complexity or standout notes. But I could drink this everyday and die a very happy man.
 
-**Rating:** 4/5
+**Rating:** 5/5
 
 **Mental Image:** Longing for Islay.

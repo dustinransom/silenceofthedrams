@@ -11,8 +11,8 @@ age: "6 Years (Distilled September 2004, Bottled April 2011)"
 abv: 60.5
 cask: "Bourbon"
 price: ""
-score: 8
-score_scale: 10
+score: 4.5
+score_scale: 5
 mental_image: "Decadent Islay fruit pie by the sea."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/octomore-6-year-2004-futures-ii-the-beast/
@@ -30,7 +30,7 @@ The second installment in the Octomore Futures line, claiming a staggering 167pp
 **Palate:** Sweet, dark fruit. Baking spices. Biscuit. Salty. Peat. Vanilla. Mouthwatering.  
 **Finish:** Salty, sweet. Peat. Smoke. Vanilla. Pepper.
 
-**Score:** 8
+**Score:** 4.5/5
 
 **Mental Image:** Decadent Islay fruit pie by the sea.
 

@@ -24,6 +24,15 @@ Substack is a periodic roundup newsletter, not a per-review channel.
 3. Create it as a **Substack draft only**; Dustin publishes, since the subscriber email can't be unsent.
 4. After he publishes, set `substack_url` on each included review to the roundup's URL.
 
+## Whisky log (`_data/whisky_log.csv`)
+Every whisky Dustin has scored, one row each, imported from his Google Sheet "Whisky Review Archive".
+It drives the archive page. Columns: order (sheet order, 1 = newest), name, distillery, bottler,
+country, region, abv, cask, age, distilled, bottled, score (out of 5), scale (blank = 5; "10" for rows
+not yet rescored), mental_image, year, occasion, whiskybase, review (permalink slug of a written review,
+or blank), status ("open" = bottle open but not yet scored).
+- When adding a written whisky review, also add/update its row in the log and set `review` to its slug.
+- Score-only tastings just get a row (no review file). New rows go at the top (shift `order`).
+
 ## Rules
 - One file per review; don't restructure the folders without asking.
 - The 37 WordPress reviews were imported by `imports/wp_to_jekyll.py`. Reviews before Aug 2025 use

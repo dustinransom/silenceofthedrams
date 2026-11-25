@@ -11,8 +11,8 @@ age: "13 Years (Distilled 2010, Bottled 2024)"
 abv: 56.9
 cask: "60% First Fill Bourbon, 40% First Fill Amarone"
 price: ""
-score: 7
-score_scale: 10
+score: 3.5
+score_scale: 5
 mental_image: "Musty fig cola pie."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/bruichladdich-13-year-2010-friends-of-bruichladdich/
@@ -31,7 +31,7 @@ This special edition was limited to 1,881 bottles and includes a few firsts:
 **Palate:** Instantly great mouthfeel. Cola. Caramelized figs. Herbs and spices. Pruney.  
 **Finish:** Spicy. Syrupy. Cloves. Honey. Leather.
 
-**Score:** 7
+**Score:** 3.5/5
 
 **Mental Image:** Musty fig cola pie.
 

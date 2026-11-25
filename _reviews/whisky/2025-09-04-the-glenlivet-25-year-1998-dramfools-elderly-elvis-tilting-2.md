@@ -11,7 +11,7 @@ age: ""
 abv: 55.4
 cask: "Bourbon barrel"
 price: ""
-score: 3
+score: 2.5
 score_scale: 5
 mental_image: "Absinthe Flinstone vitamin old fashioned."
 date_tasted:
@@ -33,6 +33,6 @@ The finish is expected: warming, oaky bourbon. Not as full or lingering as I wou
 
 Enjoyable and interesting on the nose, but a bit standard fare otherwise. Well composed, aged whisky, but nothing particularly interesting for my taste.
 
-**Rating:** 3 / 5
+**Rating:** 2.5 / 5
 
 **Mental Image:** Absinthe Flinstone vitamin old fashioned.

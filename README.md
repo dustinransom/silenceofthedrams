@@ -10,6 +10,7 @@ but this repo is the source of truth. Substack is used for occasional roundup em
 | Path | What's in it |
 |---|---|
 | `_reviews/whisky/`, `_reviews/wine/`, `_reviews/dining/` | One markdown file per review. **This is the archive.** |
+| `_data/whisky_log.csv` | Every whisky scored (from the Google Sheet), plus open bottles. Drives the archive page. |
 | `templates/` | Blank templates for each review type (not published). |
 | `imports/` | Drop the WordPress export here for conversion (not published). |
 | `index.html` | Landing page (latest 6 reviews). |
@@ -24,7 +25,7 @@ date. Each review sets `permalink: /short-name/`, so URLs match the old WordPres
 
 - 37 published reviews converted by `imports/wp_to_jekyll.py` → `_reviews/whisky/`. About page → `about.md`.
 - WordPress images were intentionally not carried over.
-- Reviews before Aug 2025 are on the old 10-point scale (`score_scale: 10`); the site shows them as "/10".
+- All review scores were moved to the 5-point scale in Nov 2026 from the Google Sheet.
 - `_to_delete/` holds files to discard; delete the folder.
 
 ## Adding a review

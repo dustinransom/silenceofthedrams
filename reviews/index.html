@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Reviews
+title: Archive
 ---
-<h1>All reviews</h1>
+<h1>The archive</h1>
+<p class="muted">Every whisky I've scored, plus wine and dining reviews. Names in bold have a written review.</p>
 <div class="filters">
-  <input id="q" type="search" placeholder="Search name, distillery, region, tag…">
+  <input id="q" type="search" placeholder="Search name, distillery, bottler, region, cask…">
   <select id="type">
     <option value="">All types</option>
     <option value="whisky">Whisky</option>
@@ -14,14 +15,39 @@ title: Reviews
   <select id="sort">
     <option value="date">Newest first</option>
     <option value="score">Highest score</option>
+    <option value="name">A–Z</option>
   </select>
+  <label class="check"><input id="written" type="checkbox"> Written reviews only</label>
   <span id="count" class="muted"></span>
 </div>
 <table class="archive">
-  <thead><tr><th>Name</th><th>Type</th><th>Region / City</th><th class="num">Score</th><th class="num">Published</th></tr></thead>
+  <thead><tr><th>Name</th><th>Region</th><th class="num">Score</th><th class="num">Year</th></tr></thead>
   <tbody id="rows">
-  {% assign all = site.reviews | sort: "date" | reverse %}
-  {% for r in all %}{% include review-row.html %}{% endfor %}
+  {% assign reviews_by_slug = site.reviews %}
+  {% for w in site.data.whisky_log %}{% if w.status != "open" %}
+    {% assign rv = nil %}{% if w.review != "" and w.review %}{% assign link = "/" | append: w.review | append: "/" %}{% assign rv = site.reviews | where: "url", link | first %}{% endif %}
+    {% assign scale = w.scale | default: site.score_max %}
+    {% assign norm = w.score | times: 5.0 | divided_by: scale %}
+    {% assign ord = 10000 | minus: w.order %}
+    <tr data-type="whisky" data-written="{% if rv %}1{% else %}0{% endif %}" data-score="{{ norm }}" data-date="{{ w.year | default: '0000' }}-{{ ord | prepend: '0000' | slice: -5, 5 }}" data-name="{{ w.name | downcase | escape }}" data-search="{{ w.name | downcase | escape }} {{ w.distillery | downcase | escape }} {{ w.bottler | downcase | escape }} {{ w.country | downcase }} {{ w.region | downcase }} {{ w.cask | downcase | escape }}">
+      <td>{% if rv %}<a class="written" href="{{ rv.url | relative_url }}">{{ w.name }}</a>{% else %}{{ w.name }}{% endif %}</td>
+      <td class="muted">{{ w.region | default: w.country }}</td>
+      <td class="num">{{ w.score }}{% if w.scale != "" and w.scale %}<span class="muted">/{{ w.scale }}</span>{% endif %}</td>
+      <td class="muted num">{{ w.year }}</td>
+    </tr>
+  {% endif %}{% endfor %}
+  {% assign others = site.reviews | where_exp: "r", "r.type != 'whisky'" | sort: "date" | reverse %}
+  {% for r in others %}
+    {% assign scale = r.score_scale | default: site.score_max %}
+    {% if r.score %}{% assign norm = r.score | times: 5.0 | divided_by: scale %}{% else %}{% assign norm = 0 %}{% endif %}
+    <tr data-type="{{ r.type }}" data-written="1" data-score="{{ norm }}" data-date="{{ r.date | date: '%Y' }}-{{ r.date | date: '%m%d' }}" data-name="{{ r.title | downcase | escape }}" data-search="{{ r.title | downcase | escape }} {{ r.producer | downcase }} {{ r.region | downcase }} {{ r.city | downcase }} {{ r.cuisine | downcase }} {{ r.tags | join: ' ' | downcase }}">
+      <td><a class="written" href="{{ r.url | relative_url }}">{{ r.title }}</a><span class="sub">{{ r.type | capitalize }}</span></td>
+      <td class="muted">{{ r.region | default: r.city }}</td>
+      <td class="num">{{ r.score }}</td>
+      <td class="muted num">{{ r.date | date: "%Y" }}</td>
+    </tr>
+  {% endfor %}
   </tbody>
 </table>
+
 <script src="{{ '/assets/js/filter.js' | relative_url }}"></script>

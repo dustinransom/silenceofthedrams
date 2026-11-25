@@ -11,8 +11,8 @@ age: "15 Year (Bottled 2007)"
 abv: 45
 cask: "Unknown"
 price: ""
-score: 7
-score_scale: 10
+score: 3.5
+score_scale: 5
 mental_image: "Tropical candy shop paradise."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/longmorn-15-year/
@@ -32,7 +32,7 @@ And on to the dram…
 **Palate:** Waxy, smooth. Peach. Mango. Tropical. Sweet tarts. Honey. Pears.  
 **Finish:** Lingering. Waxy. Warming. Honey. Pears. Juicy fruit.
 
-Score: 7
+Score: 3.5/5
 
 **Mental Image:** Tropical candy shop paradise.
 

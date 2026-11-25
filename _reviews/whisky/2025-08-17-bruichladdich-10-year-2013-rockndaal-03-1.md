@@ -11,7 +11,7 @@ age: ""
 abv: 50
 cask: "Bourbon, Sauternes, Austrian dessert wine, Spanish brandy ex-PX"
 price: ""
-score: 3
+score: 2.5
 score_scale: 5
 mental_image: "Bourbon auction wine smorgasbord."
 date_tasted:
@@ -31,6 +31,6 @@ The mouthfeel improved with time, but ultimately not where I'd like it to be. Lo
 
 Everything wafts back and forth between all the cask types, telling a very nice story. Laddie lactic vanilla lemon, bourbon caramel and biscuits, PX raisins, woody oak, brighter fruity profile of sauternes though I didn't find much orange. Well integrated, albeit a bit spicy for a lacking mouthfeel.
 
-**Rating:** 3 / 5
+**Rating:** 2.5 / 5
 
 **Mental Image:** Bourbon auction wine smorgasbord.

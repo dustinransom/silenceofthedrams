@@ -11,8 +11,8 @@ age: "5 Years (Distilled October 2002, Bottled April 2008)"
 abv: 46
 cask: "Buffalo Trace bourbon"
 price: ""
-score: 6
-score_scale: 10
+score: 3
+score_scale: 5
 mental_image: "Smoke on the soft-sippin' tobacco water."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/octomore-5-year-2002-futures-i/
@@ -30,7 +30,7 @@ This was apparently the first distillation of Octomore, and briefly the most pea
 **Palate:** Tobacco. Water. Touch of smoke and peat. Milk.  
 **Finish:** Salty peat and smoke. Lingering tobacco. Nearly not there...
 
-**Score:** 6
+**Score:** 3/5
 
 **Mental Image:** Smoke on the soft-sippin' tobacco water.
 

@@ -11,8 +11,8 @@ age: "5 Years (Distilled January 2006, Bottled April 2011)"
 abv: 64.6
 cask: "Bourbon"
 price: ""
-score: 8
-score_scale: 10
+score: 4.5
+score_scale: 5
 mental_image: "That ain't a Bruichladdich."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/bruichladdich-5-year-2006-x4-futures/
@@ -30,7 +30,7 @@ A quadruple-distilled (hence the 'X4') Laddie made using Oxbridge barley as part
 **Palate:** Big, hot. Baking spices. Essential oils, concentrated florals. Motor oil.  
 **Finish:** Vanilla. Citrus. Caramel.
 
-**Score:** 8
+**Score:** 4.5/5
 
 **Mental Image:** That ain't a Bruichladdich.
 

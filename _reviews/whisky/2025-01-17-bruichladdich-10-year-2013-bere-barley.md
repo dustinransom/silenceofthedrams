@@ -11,8 +11,8 @@ age: "10 Years (Distilled 2013, Bottled 2023)"
 abv: 50
 cask: "80% 1st Fill Bourbon, 20% 2nd Fill Pauillac Wine"
 price: ""
-score: 7
-score_scale: 10
+score: 3
+score_scale: 5
 mental_image: "Sweet, salty barley wine."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/bruichladdich-10-year-2013-bere-barley/
@@ -31,7 +31,7 @@ This Bruichladdich release is meant to highlight the unique flavor of the Bere b
 **Palate:** Sweet, creamy malt. Stone fruit and melon. Brown sugar. Vanilla. Salt.  
 **Finish:** Sweet. Cognac. Creme brûlée. Honey. Tobacco.
 
-**Score:** 7
+**Score:** 3/5
 
 **Mental Image:** Sweet, salty barley wine.
 

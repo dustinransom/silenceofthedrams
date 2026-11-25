@@ -11,8 +11,8 @@ age: "5 years and 6 months (Barreled Apr 24, 2018, Bottled Oct 24, 2023)"
 abv: 62.5
 cask: "American Oak, Cask number 23-09221"
 price: ""
-score: 7
-score_scale: 10
+score: 3.5
+score_scale: 5
 mental_image: "Bourbon sweets with grandpa."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/jack-daniels-single-barrel-1-for-the-rare-liquor-king/
@@ -32,7 +32,7 @@ And on to the dram...
 **Palate:** Warm spices. Plums. Toffee. Lingering banana note. Brown sugar. Weighty.  
 **Finish:** Long, warm, sugary. Spices. Perfumed soap. Hot.
 
-**Score:** 7
+**Score:** 3.5/5
 
 **Mental Image:** Bourbon sweets with grandpa.
 

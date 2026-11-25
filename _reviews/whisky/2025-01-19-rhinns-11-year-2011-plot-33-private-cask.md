@@ -11,8 +11,8 @@ age: "11 Years (Distilled 2011, Bottled 2022)"
 abv: 50
 cask: "Vin Doux Naturel hogshead"
 price: ""
-score: 8
-score_scale: 10
+score: 4
+score_scale: 5
 mental_image: "Wine and burnt ends in the BBQ sulfur pit."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/rhinns-11-year-2011-plot-33-private-cask/
@@ -33,7 +33,7 @@ This particular Rhinns is a private bottling that commemorated special memories.
 **Palate:** Hazelnuts. Smoked meats. Chocolate. Oily. Water brings out wine notes.  
 **Finish:** Sweet and salty. More peat with time. Sulfur.
 
-**Score:** 8
+**Score:** 4/5
 
 **Mental Image:** Wine and burnt ends in the BBQ sulfur pit.
 

@@ -11,8 +11,8 @@ age: "23 Years (Distilled 1990, Bottled 2013)"
 abv: 49.2
 cask: "Various unknown Jim McEwan wizardry"
 price: ""
-score: 9
-score_scale: 10
+score: 5
+score_scale: 5
 mental_image: "Everything everywhere all at once."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/bruichladdich-black-art-04-1/
@@ -32,7 +32,7 @@ And on to the dram…
 **Palate:** Stew every kind of candy and sweet in your mouth all at once. Strawberry. Raspberry. Blackberry. Cherry. Leather. Wine. Sweeties. Cream. Lactic. Herbal. Spice. Oily and thick.  
 **Finish:** Bark. Biscuit. Stewed fruits and jam. Mint. Dry, but somehow juicy. Juicy fruit. Perfume and fragrance. A touch of peat?
 
-**Score:** 9
+**Score:** 5/5
 
 **Mental Image:** Everything everywhere all at once.
 

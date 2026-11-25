@@ -11,8 +11,8 @@ age: "Approx 25 Years (Distilled 1998, Bottled Unknown)"
 abv: 60.7
 cask: "Unknown"
 price: ""
-score: 6
-score_scale: 10
+score: 2.5
+score_scale: 5
 mental_image: "Table cleaner with a coastal view."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/port-dundas-25-year-1998-cigar-ben-bottling/
@@ -33,7 +33,7 @@ And on to the dram...
 **Palate:** Peppery. Creamy. Sauternes. Sweet and slightly salty. Delicate fruits.  
 **Finish:** Touch of cream. Dash of syrup. Biscuit.
 
-**Score:** 6
+**Score:** 2.5/5
 
 **Mental Image:** Table cleaner with a coastal view.
 

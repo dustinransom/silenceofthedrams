@@ -12,7 +12,7 @@ abv:
 cask: ""
 price: ""
 score:
-scores: [2, 2, 2, 3, 3]   # multiple drams in one post
+scores: [2.5, 2.5, 2.5, 3, 3.5]   # multiple drams in one post
 score_scale: 5
 mental_image: "Complex raisin water."
 date_tasted:
@@ -34,7 +34,7 @@ It's warm. Ginger chocolate. Cinnamon and spice. Cherry and red fruits.
 
 This is the 2023 (bottling date) release, bottled at 43%. A perfectly fine dram cut off at the knees by water. There's some nice stuff going on, though it's a pretty standard sherry dram and ruined by water. (Man, would I be upset to pay full cost on a bottle of this...)
 
-**Score: 2/5**
+**Score: 2.5/5**
 
 **Mental Image:** Complex raisin water.
 
@@ -50,7 +50,7 @@ I find it a bit spicy. Alcohol vapors, even at this dilution. Musty wine. A buil
 
 This is the 2022 (bottling date) release, again at 43%. Some of the more beautiful Macallans I've had had notes that showed up in this edition. Again, lovely things going on, this time more interestingly so, completely ruined by dilution. On top of that, I did find the nose, palate, and finish pretty disjoint, even if it did have some overlap with wondrous high-end Macallans for me.
 
-**Score: 2/5**
+**Score: 2.5/5**
 
 **Mental Image:** Underwater wine bar sweet treats.
 
@@ -66,7 +66,7 @@ Tobacco wafts over rich prunes. Ginger and orange zest lingers.
 
 This is the 2021 (bottling date) edition, also bottled at 43%. Much more composed and cohesive. Notes verged on hard to identify beyond sherry cask influence and typical Macallan distillate. Nice, smooth, and mouth-coating. A shame it was subject to so much water. I'd have liked it to be more interesting overall, and obviously the ABV harmed it.
 
-**Score: 2/5**
+**Score: 2.5/5**
 
 **Mental Image:** Poolside prunes behind the cigar lounge.
 
@@ -98,7 +98,7 @@ The finish is more of the same. Smoked, aged meat. Burnt rubber. Cream and sherr
 
 This was distilled in 1992 and bottled around 2010. Apparently, they used to mark the editions by distillation date and later switched to bottling date. Again, we've got a 43% bottling. While thinner, it's much improved over the more recent editions. But good lord was that an odd dram. I'm a sucker for weird, interesting drams even if I don't like them. For most, this is probably not the whisky they'd go for. If the price were (very) right, I'd be all over it for how odd it was. But alas, the stars do not align.
 
-**Score: 3/5**
+**Score: 3.5/5**
 
 **Mental Image:** Bad steakhouse sherry tasting amidst body odour.
 

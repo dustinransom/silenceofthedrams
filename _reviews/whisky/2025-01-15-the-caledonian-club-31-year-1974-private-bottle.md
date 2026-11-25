@@ -11,8 +11,8 @@ age: "31 Years (Distilled 1974, Bottled 2006)"
 abv: 53.3
 cask: "Unknown"
 price: ""
-score: 9
-score_scale: 10
+score: 4.5
+score_scale: 5
 mental_image: "Salted cherry cola concentrate."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/the-caledonian-club-31-year-1974-private-bottle/
@@ -32,7 +32,7 @@ And on to the dram…
 **Palate:** Rich and salty. Spices. Stewed dark fruits. Big and oily. Cherry cola.  
 **Finish:** Spices. Vanilla. Salt. Prunes. Plums. Cherry cola. Cured meat. Long and unctuous. Building heat.
 
-**Score:** 9
+**Score:** 4.5/5
 
 **Mental Image:** Salted cherry cola concentrate.
 

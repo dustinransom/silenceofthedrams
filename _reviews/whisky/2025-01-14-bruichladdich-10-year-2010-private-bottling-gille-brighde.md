@@ -11,8 +11,8 @@ age: "10 Years (Distilled 2010, Bottled 2020)"
 abv: 53.5
 cask: "Bourbon"
 price: ""
-score: 8
-score_scale: 10
+score: 4
+score_scale: 5
 mental_image: "Jim McEwan's sherbert shop."
 date_tasted:
 wordpress_url: https://silenceofthedrams.com/bruichladdich-10-year-2010-private-bottling-gille-brighde/
@@ -32,7 +32,7 @@ And on to the dram…
 **Palate:** Rich and concentrated. Sweet and salty. Pepper. Cream. Citrus. Lemon sherbert. White chocolate. Oily.  
 **Finish:** Creamy. Oily. Lingering. Lemon and honey.
 
-**Score:** 8
+**Score:** 4/5
 
 **Mental Image:** Jim McEwan's sherbert shop.
 
