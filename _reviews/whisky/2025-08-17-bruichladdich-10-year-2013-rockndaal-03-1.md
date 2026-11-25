@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["bruichladdich", "islay"]
 ---
 A limited edition of 3,000 bottles for the Fèis Ìle 2024. This spirit was distilled in 2013 and then aged in bourbon casks before being re-casked in the following barrels from 2017 to 2023: Sauternes (12.5%), Austrian dessert wine (12.5%), and ex-brandy casks from Fernando de Castilla, Spain, which previously held Pedro Ximenez sherry (75%). The spirit was married into bourbon casks before bottling at an age of 10 years.
-
-![](/assets/images/wp/2025/08/Rockndaal-03-01-Bottle-1.webp)
-
-(Image credit: Bruichladdich)
-
 **Whisky:** Bruichladdich 10 Year (2013), Rock'ndaal 03.1  
 **Country/Region:** Scotland/Islay  
 **Cask:** Bourbon, Sauternes, Austrian dessert wine, Spanish brandy ex-PX  

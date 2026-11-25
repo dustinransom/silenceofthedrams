@@ -22,9 +22,6 @@ tags: ["bruichladdich", "islay", "scotch"]
 This [Bruichladdich](https://www.bruichladdich.com/) was tasted as part of [Dramfool](https://dramfool.com/)‘s [Brain Tumor Research](https://braintumourresearch.org/) Charity Tasting. Chatting with others in the tasting, it was clear that many present had been impacted by the effects of Brain Tumors/Cancer. It was a wonderful experience to share these drams with loved ones in mind while supporting future research. Thanks to those who donated the bottles in this tasting, and to Dramfool for yet another exceptional tasting experience (with purpose).
 
 And on to the dram…
-
-![](/assets/images/wp/2025/01/bruichladdichgille.jpg)
-
 **Whisky:** Bruichladdich 10 Year (2010), Private Bottling "Gille-Brìghde"  
 **Country/Region:** Scotland/Islay  
 **ABV:** 53.5%  

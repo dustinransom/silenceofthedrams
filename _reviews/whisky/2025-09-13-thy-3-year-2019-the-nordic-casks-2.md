@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["denmark", "thy"]
 ---
 I don't know much about Thy distillery, but looked them up for a few minutes before enjoying this dram. Thy is an organic single-estate whisky, originally an 8-generation family farm turned closed-loop family whisky estate. They farm and process their organic grain and produce the whisky on traditional, often handmade, equipment in a process focused on craft and quality. [Their story](https://www.whiskymag.com/articles/exploring-thy-whisky-the-danish-leader-in-single-estate-whisky/) and practice elevates the experience for me.
-
-![](/assets/images/wp/2025/09/thy.jpg)
-
-(Image from whiskybase store)
-
 **Whisky:** Thy 3 Year (2019), The Nordic Casks \#2  
 **Bottler:** Berry Bros & Rudd  
 **Cask:** Quarter cask  

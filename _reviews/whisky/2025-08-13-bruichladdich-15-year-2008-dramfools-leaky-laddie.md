@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["bruichladdich", "dramfool", "islay", "scotch"]
 ---
 As the name suggests, this came from a leaking private Bruichladdich cask whose owner tasked Dramfool to rescue it. They re-racked it into a refill sherry octave to stop the losses. Only 77x20cl bottles were available.
-
-![](/assets/images/wp/2025/08/dramfool-leaky-laddie.jpeg)
-
-(Image credit: Dramfool)
-
 **Whisky:** Bruichladdich 15 Year (2008), Dramfool's Festival Edition "Leaky Laddie"  
 **Country/Region:** Scotland/Islay  
 **Cask:** Bourbon, Re-racked refill sherry octave  

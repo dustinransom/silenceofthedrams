@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["decadent drams", "smogen", "sweden"]
 ---
 My first Smögen. I've heard nothing but very high praise for this Swedish distillery so my expectations coming into this dram were fairly high. The distillery is on a farm and named after a nearby island, Smögen. They focus on small batch production, using entirely manual processes with full attention to the highest quality production. Hearing that, as you might imagine, they like to use local raw materials, but "this endeavor subordinates to the quality process." I can F with that.
-
-![](/assets/images/wp/2025/09/Screenshot-2025-09-14-at-10.02.13-AM.png)
-
-(Image from Decadent Drams)
-
 **Whisky:** Smögen 10 Year (2014)  
 **Cask:** Madeira hogshead (8 years) + Refill hogshead (2 years)  
 **Bottler:** Decadent Drams  

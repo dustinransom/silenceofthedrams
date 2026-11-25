@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["ardmore", "highland", "scotch", "thompson bros"]
 ---
 I've only recently had the chance to try Ardmore, one each from Decadent Drams and Dramfool. I found the latter much more enjoyable, but both had interesting similarities: salt, grass, oil, and a touch of fruit. One of these I likened to an old tractor in a grassy field. Having grown up in a rural area around farms, Ardmore has so far hit on some nice nostalgic vibes. Let's see how this Thompson Bros release compares.
-
-![](/assets/images/wp/2025/09/Screenshot-2025-09-20-at-10.49.15-AM.png)
-
-(Image from Thompson Bros)
-
 **Whisky:** Ardmore 25 Year (1998)  
 **Cask:** Two refill hogsheads  
 **Bottler:** Thompson Bros  

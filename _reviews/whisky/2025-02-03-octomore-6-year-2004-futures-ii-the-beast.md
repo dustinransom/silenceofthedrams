@@ -20,9 +20,6 @@ substack_url: ""
 tags: ["dramfool", "islay", "octomore"]
 ---
 The second installment in the Octomore Futures line, claiming a staggering 167ppm peat content. My understanding is that this was a distillery-only release, limited to 9600 bottles.
-
-![](/assets/images/wp/2025/02/octomorefuturesbeast.jpg)
-
 **Whisky:** Octomore 6 Year (2004), Futures II "The Beast"  
 **Country/Region:** Scotland/Islay  
 **Cask:** Bourbon  

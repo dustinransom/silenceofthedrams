@@ -20,9 +20,6 @@ substack_url: ""
 tags: ["bruichladdich", "dramfool", "islay", "octomore"]
 ---
 This was apparently the first distillation of Octomore, and briefly the most peated whisky in the world at 80.5ppm. Aged in a Buffalo Trace bourbon cask.
-
-![](/assets/images/wp/2025/01/octofutures1-768x1024.jpg)
-
 **Whisky:** Octomore 5 Year (2002), Futures I  
 **Country/Region:** Scotland/Islay  
 **Cask:** Buffalo Trace bourbon  

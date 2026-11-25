@@ -13,15 +13,14 @@ layout: default
 <section>
   <h2>Latest</h2>
   {% assign latest = site.reviews | sort: "date" | reverse %}
-  <ul class="cards">
-  {% for r in latest limit: 6 %}
+  <ul class="recent">
+  {% for r in latest limit: 10 %}
     <li>
-      <a href="{{ r.url | relative_url }}">
-        <span class="eyebrow">{{ r.type | capitalize }}</span>
-        <strong>{{ r.title }}</strong>
-        {% if r.score %}<span class="score-sm">{{ r.score }}{% if r.score_scale and r.score_scale != site.score_max %}/{{ r.score_scale }}{% endif %}</span>{% endif %}
-      </a>
+      <a href="{{ r.url | relative_url }}">{{ r.title }}</a>
+      <span class="meta">{{ r.type | capitalize }}{% assign place = r.region | default: r.country | default: r.city %}{% if place != "" and place %} · {{ place }}{% endif %} · {{ r.date | date: "%b %-d, %Y" }}</span>
+      {% if r.score %}<span class="score-sm">{{ r.score }}{% if r.score_scale and r.score_scale != site.score_max %}/{{ r.score_scale }}{% endif %}</span>{% endif %}
     </li>
   {% endfor %}
   </ul>
+  <p><a href="{{ '/reviews/' | relative_url }}">All reviews →</a></p>
 </section>

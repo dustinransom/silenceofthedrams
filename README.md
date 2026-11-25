@@ -23,10 +23,9 @@ date. Each review sets `permalink: /short-name/`, so URLs match the old WordPres
 ## WordPress import (done Nov 2026)
 
 - 37 published reviews converted by `imports/wp_to_jekyll.py` → `_reviews/whisky/`. About page → `about.md`.
-- **Images:** run `bash imports/download-images.sh` from this folder on your Mac *before* WordPress is
-  shut down. It saves the 18 review images into `assets/images/wp/`, where the reviews already point.
+- WordPress images were intentionally not carried over.
 - Reviews before Aug 2025 are on the old 10-point scale (`score_scale: 10`); the site shows them as "/10".
-- `_to_delete/` holds the placeholder example review; delete the folder.
+- `_to_delete/` holds files to discard; delete the folder.
 
 ## Adding a review
 

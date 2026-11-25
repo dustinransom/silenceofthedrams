@@ -20,9 +20,6 @@ substack_url: ""
 tags: ["bruichladdich", "dramfool", "islay"]
 ---
 This Bruichladdich release is meant to highlight the unique flavor of the Bere barley varietal. In doing so, they also stick to their sustainability commitment by promoting genetic diversity and responsible land management. Bere barley is Britain's oldest continuously cultivated cereal. Apparently, Bere barley was once more prominently used in the production of Scotch, but being a lower-yield variety its use diminished. This particular whisky utilizes Bere barley grown in Orkney.
-
-![](/assets/images/wp/2025/01/berebarley2013-404x1024.webp)
-
 **Whisky:** Bruichladdich 10 Year (2013) Bere Barley  
 **Country/Region:** Scotland/Islay  
 **ABV:** 50%  

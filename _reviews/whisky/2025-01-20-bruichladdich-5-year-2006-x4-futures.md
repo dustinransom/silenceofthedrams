@@ -20,9 +20,6 @@ substack_url: ""
 tags: ["bruichladdich", "dramfool", "islay"]
 ---
 A quadruple-distilled (hence the 'X4') Laddie made using Oxbridge barley as part of a limited edition run under the supervision of Jim McEwan. It's a doozie.
-
-![](/assets/images/wp/2025/01/x4futures-512x1024.webp)
-
 **Whisky:** Bruichladdich 5 Year (2006), X4 Futures  
 **Country/Region:** Scotland/Islay  
 **Cask:** Bourbon  

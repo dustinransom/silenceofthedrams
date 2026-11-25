@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["bruichladdich", "islay"]
 ---
 From Dramfool: *"Barrel \#3203 was filled on 21st September 2011, and bottled at natural cask strength of 61.0% on 12th February 2025, making this delightful Laddie 13 years old. 216 bottles were yielded from the barrel."*
-
-![](/assets/images/wp/2025/08/Screenshot-2025-08-24-at-3.49.10-PM.png)
-
-(Image credit: Dramfool)
-
 **Whisky:** Bruichladdich 13 Year (2011), Dramfool's Middle Cut  
 **Country/Region:** Scotland/Islay  
 **Cask:** 1st Fill Bourbon  

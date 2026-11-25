@@ -20,11 +20,6 @@ substack_url: ""
 tags: ["dramfool", "glenlivet", "speyside"]
 ---
 This is Dramfool's 2nd iteration of the Elderly Elvis Tilting, which you might notice is an anagram of The Glenlivet. Aged for 25 years in a bourbon barrel from 1998 to 2023.
-
-![](/assets/images/wp/2025/09/Screenshot-2025-09-04-at-12.15.39-PM.png)
-
-(Image credit: Dramfool)
-
 **Whisky:** The Glenlivet 25 Year (1998), Dramfool's Elderly Elvis Tilting \#2  
 **Country/Region:** Scotland/Speyside  
 **Cask:** Bourbon barrel  

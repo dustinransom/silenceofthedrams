@@ -21,9 +21,6 @@ tags: ["bruichladdich", "dramfool", "islay"]
 ---
 This special edition was limited to 1,881 bottles and includes a few firsts:  
 (1) the first Bruichladdich collaboration (with the [Friends of Bruichladdich group](https://www.instagram.com/friendsofbruichladdich/) in this case) outside of the single cask Micro Provenance series, (2) the first 13 year old Laddie, and (3) the first Islay Barley release over 50% ABV.
-
-![](/assets/images/wp/2025/01/FOB.jpg)
-
 **Whisky:** Bruichladdich 13 Year (2010), Friends of Bruichladdich  
 **Country/Region:** Scotland/Islay  
 **ABV:** 56.9%  

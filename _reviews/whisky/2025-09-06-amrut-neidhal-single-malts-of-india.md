@@ -20,9 +20,6 @@ substack_url: ""
 tags: ["amrut", "india"]
 ---
 Amrut is a distillery I've not tried, and I have heard pretty mixed reviews, so I was eager to try this. Neidhal is their first Single Malts of India release, which I saw described as sourcing hidden gems from around India and perfecting them at Amrut. So is this truly an Amrut? No idea. The distillery's Wikipedia page has some cool history and production notes, but I'm not getting into it here since it's not even clear it's distilled by Amrut.
-
-![](/assets/images/wp/2025/09/Screenshot-2025-09-06-at-7.54.36-AM.png)
-
 **Whisky:** Amrut Neidhal, Single Malts of India  
 **Country/Region:** India  
 **Cask:** Unknown  
