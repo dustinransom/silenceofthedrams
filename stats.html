@@ -1,0 +1,83 @@
+---
+layout: default
+title: Stats
+permalink: /stats/
+wide: true
+---
+<h1>By the numbers</h1>
+<p class="muted">Every whisky I've scored, broken down. Hover over any bar or dot for details. Scores are out of 5.</p>
+
+<div id="tiles" class="tiles"></div>
+
+<section class="chart-block">
+  <h2>How I score</h2>
+  <p class="muted">Most whiskies land between 2.5 and 3.5. A 4 is a genuine recommendation; a 5 is rare.</p>
+  <div id="chart-scores"></div>
+</section>
+
+<section class="chart-block">
+  <h2>Regions</h2>
+  <p class="muted">How many I've tasted from each region, with the average score. Darker bars (3+ tasted) beat my overall average.</p>
+  <div id="chart-regions"></div>
+</section>
+
+<section class="chart-block two-up">
+  <div>
+    <h2>Most-tasted distilleries</h2>
+    <p class="muted">Bruichladdich includes Octomore, Port Charlotte and Rhinns; hover for the split.</p>
+    <div id="chart-dist-most"></div>
+  </div>
+  <div>
+    <h2>Highest-rated distilleries</h2>
+    <p class="muted">Average score, with at least 3 tasted.</p>
+    <div id="chart-dist-best"></div>
+  </div>
+</section>
+
+<section class="chart-block two-up">
+  <div>
+    <h2>Official vs independent</h2>
+    <p class="muted">Average score by who bottled it.</p>
+    <div id="chart-bottling"></div>
+  </div>
+  <div>
+    <h2>Independent bottlers</h2>
+    <p class="muted">Average score, with at least 3 tasted.</p>
+    <div id="chart-bottlers"></div>
+  </div>
+</section>
+
+<section class="chart-block">
+  <h2>Cask type</h2>
+  <p class="muted">Average score by the main cask influence. "Mixed" means more than one type (e.g. bourbon and sherry).</p>
+  <div id="chart-casks"></div>
+</section>
+
+<section class="chart-block two-up">
+  <div>
+    <h2>Strength vs score</h2>
+    <p class="muted">Each dot is a whisky; the line is the average score at each strength.</p>
+    <div id="chart-abv"></div>
+  </div>
+  <div>
+    <h2>Age vs score</h2>
+    <p class="muted">Each dot is a whisky; the line is the average score at each age.</p>
+    <div id="chart-age"></div>
+  </div>
+</section>
+
+<section class="chart-block">
+  <h2>By year</h2>
+  <div id="chart-years"></div>
+</section>
+
+<section class="chart-block">
+  <h2>Hall of fame</h2>
+  <p class="muted">Everything I've scored 4.5 or higher.</p>
+  <ul id="fame" class="recent fame"></ul>
+</section>
+
+<p class="muted small">Want the full list? <a href="{{ '/reviews/' | relative_url }}">See the archive →</a></p>
+
+<script id="whisky-data" type="application/json">{{ site.data.whisky_log | jsonify }}</script>
+<script src="{{ '/assets/js/stats.js' | relative_url }}"></script>

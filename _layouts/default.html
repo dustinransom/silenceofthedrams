@@ -15,11 +15,12 @@
     <a class="wordmark" href="{{ '/' | relative_url }}">Silence of the Drams</a>
     <nav>
       <a href="{{ '/reviews/' | relative_url }}">Archive</a>
+      <a href="{{ '/stats/' | relative_url }}">Stats</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ site.substack_url }}">Subscribe</a>
     </nav>
   </header>
-  <main>{{ content }}</main>
+  <main{% if page.wide %} class="wide"{% endif %}>{{ content }}</main>
   <footer class="site-footer">
     <p>© {{ 'now' | date: '%Y' }} Silence of the Drams · <a href="{{ site.substack_url }}">Roundup newsletter</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
   </footer>
