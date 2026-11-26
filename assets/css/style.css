@@ -122,3 +122,12 @@ h2 { font-size: 1.7rem; margin-top: 3rem; }
 /* Quick reviews: muted Nose / Palate / Finish lines above the take */
 .review .body .npf { color: var(--muted); }
 .review .body .npf strong { font-weight: 500; color: var(--ink); }
+.tile-link { display: block; margin-top: .75rem; text-decoration: none; color: var(--ink); }
+.tile-link:hover { border-color: var(--amber); }
+.tile-cta { font-size: .85rem; color: var(--amber-dark); margin-top: .5rem; }
+#distillery-tracker .tiles { margin-top: 1.25rem; }
+@media (max-width: 600px) { .site-header nav a { margin-left: .8rem; font-size: .9rem; } }
+@media (max-width: 600px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: .6rem; }
+  .site-header nav a { margin-left: 0; margin-right: 1.1rem; font-size: .95rem; }
+}

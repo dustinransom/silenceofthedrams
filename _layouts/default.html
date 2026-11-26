@@ -19,13 +19,12 @@
     <nav>
       <a href="{{ '/reviews/' | relative_url }}">Archive</a>
       <a href="{{ '/stats/' | relative_url }}">Stats</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ site.substack_url }}">Subscribe</a>
+      <a href="{{ '/distilleries/' | relative_url }}">Distilleries</a>
     </nav>
   </header>
   <main{% if page.wide %} class="wide"{% endif %}>{{ content }}</main>
   <footer class="site-footer">
-    <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="{{ site.substack_url }}">Roundup newsletter</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="{{ '/about/' | relative_url }}">About</a> · <a href="{{ site.substack_url }}">Subscribe to the newsletter</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
   </footer>
 </body>
 </html>

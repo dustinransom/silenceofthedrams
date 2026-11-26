@@ -7,6 +7,7 @@ permalink: /stats/
 <p class="muted">Every whisky I've scored, broken down. Hover over any bar or dot for details. Scores are out of 5.</p>
 
 <div id="tiles" class="tiles"></div>
+<a id="tracker-link" class="tile tile-link" href="{{ '/distilleries/' | relative_url }}"></a>
 
 <section class="fame-card">
   <div class="fame-head"><span class="tile-label">Hall of fame</span><span class="muted">Everything scored 4.5 or 5</span></div>
@@ -73,20 +74,6 @@ permalink: /stats/
 <section class="chart-block">
   <h2>By year</h2>
   <div id="chart-years"></div>
-</section>
-
-<section class="chart-block" id="distillery-tracker">
-  <h2>Scottish distillery tracker</h2>
-  <p class="muted">Every working Scottish distillery, plus the lost ones whose whisky still turns up. Filled in means I've scored at least one; hover for details.</p>
-  <div id="tracker-tiles" class="tiles tiles-3"></div>
-  <div class="tracker-filters" role="group" aria-label="Filter distilleries">
-    <button type="button" data-f="all" aria-pressed="true">All</button>
-    <button type="button" data-f="tried" aria-pressed="false">Tried</button>
-    <button type="button" data-f="untried" aria-pressed="false">Not yet</button>
-    <button type="button" data-f="ghost" aria-pressed="false">Ghosts &amp; revived</button>
-  </div>
-  <div id="tracker"></div>
-  <p class="muted legend"><span class="chip tried">✓ Tried</span> <span class="chip">Not yet</span> &nbsp;👻 Ghost: closed for good &nbsp;·&nbsp; 🧟 Revived: closed, now back from the dead. Revived tiles track the old (pre-closure) and new spirit separately.</p>
 </section>
 
 <p class="muted small">Want the full list? <a href="{{ '/reviews/' | relative_url }}">See the archive →</a></p>

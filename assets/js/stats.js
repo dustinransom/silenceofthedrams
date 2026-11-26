@@ -132,7 +132,7 @@
   function drawTracker() {
     if (trackerBuilt) return; trackerBuilt = true;
     var dEl = document.getElementById('distillery-data'), mount = document.getElementById('tracker');
-    if (!dEl || !mount) return;
+    if (!dEl) return;
     var dists = JSON.parse(dEl.textContent), lookup = {};
     dists.forEach(function (d) {
       d.tried = []; lookup[d.name.toLowerCase()] = d;
@@ -157,6 +157,10 @@
     function count(list, st) { var l = list.filter(function (d) { return st.indexOf(d.status) > -1; }); return [l.filter(function (d) { return d.tried.length; }).length, l.length]; }
     var a = count(dists, ['active', 'revived']), g = count(dists, ['ghost']);
     var t = dists.filter(function (d) { return d.tried.length; }).length;
+    var link = document.getElementById('tracker-link');
+    if (link) link.innerHTML = '<div class="tile-label">Scottish distilleries tried</div><div class="tile-value">' + t +
+      '<span class="tile-unit"> of ' + dists.length + '</span></div><div class="meter"><span style="width:' + Math.max(2, Math.round(100 * t / dists.length)) + '%"></span></div><div class="tile-cta">See the distillery tracker →</div>';
+    if (!mount) return;
     document.getElementById('tracker-tiles').innerHTML = [
       ['All distilleries tried', t + '<span class="tile-unit"> of ' + dists.length + '</span>', t / dists.length],
       ['Working', a[0] + '<span class="tile-unit"> of ' + a[1] + '</span>', a[0] / a[1]],
@@ -213,6 +217,7 @@
   }
   function width(mount){ return Math.max(300, Math.floor(mount.clientWidth)); }
   function draw() {
+  if (!document.getElementById('chart-scores')) { drawTracker(); return; }
   ['chart-scores','chart-regions','chart-dist-most','chart-dist-best','chart-bottling','chart-bottlers','chart-casks','chart-abv','chart-age','chart-years'].forEach(function(id){ var m=document.getElementById(id); if(m) m.innerHTML=''; });
   /* ---------- 1. headline tiles ---------- */
   var scores = data.map(function (w) { return w.score; }), avgAll = mean(scores);

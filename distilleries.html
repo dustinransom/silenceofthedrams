@@ -1,0 +1,25 @@
+---
+layout: default
+title: Distillery Tracker
+permalink: /distilleries/
+---
+<h1>The Distillery Tracker</h1>
+<p class="muted">Every working Scottish distillery, plus the lost ones whose whisky still turns up. Filled in means I've scored at least one; hover for details.</p>
+
+<section id="distillery-tracker">
+  <div id="tracker-tiles" class="tiles tiles-3"></div>
+  <div class="tracker-filters" role="group" aria-label="Filter distilleries">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="tried" aria-pressed="false">Tried</button>
+    <button type="button" data-f="untried" aria-pressed="false">Not yet</button>
+    <button type="button" data-f="ghost" aria-pressed="false">Ghosts &amp; revived</button>
+  </div>
+  <div id="tracker"></div>
+  <p class="muted legend"><span class="chip tried">✓ Tried</span> <span class="chip">Not yet</span> &nbsp;👻 Ghost: closed for good &nbsp;·&nbsp; 🧟 Revived: closed, now back from the dead. Revived tiles track the old (pre-closure) and new spirit separately.</p>
+</section>
+
+<p class="muted small">Want the numbers behind it? <a href="{{ '/stats/' | relative_url }}">See the stats →</a></p>
+
+<script id="distillery-data" type="application/json">{{ site.data.scotch_distilleries | jsonify }}</script>
+<script id="whisky-data" type="application/json">{{ site.data.whisky_log | jsonify }}</script>
+<script src="{{ '/assets/js/stats.js' | relative_url }}"></script>
