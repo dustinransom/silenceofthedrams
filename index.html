@@ -1,16 +1,7 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <h1>Silence of the Drams</h1>
-  <p>{{ site.tagline }}</p>
-  <p class="cta">
-    <a class="button" href="{{ site.substack_url }}">Get the roundup by email</a>
-    <a class="button ghost" href="{{ '/reviews/' | relative_url }}">Browse the archive</a>
-  </p>
-</section>
-
-<section>
+<section class="home">
   <h2>Latest</h2>
   {% assign latest = site.reviews | sort: "date" | reverse %}
   <ul class="recent">

@@ -82,3 +82,4 @@ h2 { font-size: 1.7rem; margin-top: 3rem; }
 .fame .fame-name { font-family: var(--serif); font-size: 1.2rem; }
 .fame .fame-name a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--amber); }
 .small { font-size: .9rem; margin-top: 2.5rem; }
+.home h2 { margin-top: .5rem; }
