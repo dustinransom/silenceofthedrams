@@ -12,7 +12,10 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <div class="brand">
+      <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <p class="tagline">{{ site.tagline }}</p>
+    </div>
     <nav>
       <a href="{{ '/reviews/' | relative_url }}">Archive</a>
       <a href="{{ '/stats/' | relative_url }}">Stats</a>
