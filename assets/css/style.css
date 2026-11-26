@@ -118,3 +118,7 @@ h2 { font-size: 1.7rem; margin-top: 3rem; }
 .dicon { margin-right: .3rem; font-size: .85rem; }
 .era { opacity: .75; }
 .era.on { opacity: 1; font-weight: 600; }
+
+/* Quick reviews: muted Nose / Palate / Finish lines above the take */
+.review .body .npf { color: var(--muted); }
+.review .body .npf strong { font-weight: 500; color: var(--ink); }

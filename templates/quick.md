@@ -15,15 +15,16 @@ country: Scotland
 age: ""              # "15 years" or "NAS"
 abv:                 # number, e.g. 46
 cask: ""
-price: ""
 score:               # out of 5, half points OK
-date_tasted:         # YYYY-MM-DD
 occasion: ""         # where/with whom, e.g. "Feis Ile tasting at Jim's"
 mental_image: ""
 whiskybase: ""       # URL, optional
 substack_url: ""
 tags: []
 ---
-The take: one to three sentences, ~280 characters. This is the review.
+**Nose:** …  
+**Palate:** …  
+**Finish:** …
+{: .npf}
 
-Nose: … · Palate: … · Finish: …
+The take: one to three sentences, ~280 characters. This is the review.

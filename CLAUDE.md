@@ -28,18 +28,18 @@ Substack is a periodic roundup newsletter, not a per-review channel.
 Dustin usually sends these from his phone mid-tasting. Expect shorthand like:
 ```
 Quick: Springbank 15
-46%, ex-bourbon/sherry, official, $110        (any facts he has)
+46%, ex-bourbon/sherry, official              (any facts he has)
 N: ...  P: ...  F: ...                         (optional one-liners)
 3.5 · "mental image"
 take: one-to-three sentence verdict
 at: occasion / where
 ```
 1. Copy `templates/quick.md` to `_reviews/whisky/YYYY-MM-DD-slug.md`. Use today's date for `date`
-   and `date_tasted` unless he gives one. Keep `published: false`.
+   unless he gives one. Quick reviews have no price or tasted date. Keep `published: false`.
 2. Fill in only what he sent and leave the rest blank. Don't look up ABV, cask etc. List what's
    still blank at the end of your reply so he knows what to fill in later.
-3. Body = his take (tidied, his words) plus the optional `Nose · Palate · Finish` line. Remove
-   the template's placeholder text and delete the N/P/F line if he gave none. Keep it short.
+3. Body = optional Nose / Palate / Finish one-liners (each on its own line), then his take
+   (tidied, his words). Keep the `{: .npf}` line under N/P/F (it mutes them). Remove the placeholder text and drop any N/P/F line he didn't give. Keep it short.
 4. Commit + push the draft. It's safe because `published: false` keeps it off the site.
    Don't add the whisky log row yet (the archive would link to a hidden page).
 5. When he says "finish <name>": fill in the facts he gives, delete the `published` line, add/update
