@@ -8,7 +8,7 @@ layout: default
   {% for r in latest limit: 10 %}
     <li>
       <a href="{{ r.url | relative_url }}">{{ r.title }}</a>
-      <span class="meta">{{ r.type | capitalize }}{% assign place = r.region | default: r.country | default: r.city %}{% if place != "" and place %} · {{ place }}{% endif %} · {{ r.date | date: "%b %-d, %Y" }}</span>
+      <span class="meta">{% assign place = r.region | default: r.country %}{% if place != "" and place %}{{ place }} · {% endif %}{{ r.date | date: "%b %-d, %Y" }}</span>
       {% if r.score %}<span class="score-sm">{{ r.score }}{% if r.score_scale and r.score_scale != site.score_max %}/{{ r.score_scale }}{% endif %}</span>{% endif %}
     </li>
   {% endfor %}

@@ -1,6 +1,6 @@
 # Instructions for Claude: Silence of the Drams repo
 
-This repo is the canonical archive of Dustin's reviews (whisky, mostly scotch; wine; dining).
+This repo is the canonical archive of Dustin's reviews (Scotch whisky, plus the odd world whisky; the site no longer covers wine or dining).
 Substack is a periodic roundup newsletter, not a per-review channel.
 
 ## When Dustin sends tasting notes
@@ -19,8 +19,8 @@ Substack is a periodic roundup newsletter, not a per-review channel.
 1. Gather every review with an empty `substack_url` (i.e. not yet in a roundup). Skip the imported
    WordPress reviews (they have `wordpress_url`) unless Dustin asks for a "best of the archive" issue.
 2. Draft one post: short intro, then each review condensed (name, score, mental image, a few lines
-   in his words) linking to the full review on silenceofthedrams.com. Group by type
-   (whisky / wine / dining) or by tasting/event when that's the natural unit.
+   in his words) linking to the full review on silenceofthedrams.com. Group by tasting/event
+   when that's the natural unit.
 3. Create it as a **Substack draft only**; Dustin publishes, since the subscriber email can't be unsent.
 4. After he publishes, set `substack_url` on each included review to the roundup's URL.
 

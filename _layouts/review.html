@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="review">
-  <p class="eyebrow">{{ page.type | capitalize }}{% if page.region %} · {{ page.region }}{% endif %}{% if page.city %} · {{ page.city }}{% endif %}</p>
+  <p class="eyebrow">{% if page.region != "" and page.region %}{{ page.region }}{% if page.country != "" and page.country and page.country != "Scotland" %} · {{ page.country }}{% endif %}{% else %}{{ page.country }}{% endif %}</p>
   <h1>{{ page.title }}</h1>
   {% assign scale = page.score_scale | default: site.score_max %}
   {% if page.score %}<p class="score">{{ page.score }}<span>/ {{ scale }}</span></p>{% elsif page.scores %}<p class="score">{{ page.scores | join: " · " }}<span>/ {{ scale }} each</span></p>{% endif %}
@@ -11,13 +11,10 @@ layout: default
   <dl class="facts">
     {% if page.distillery %}<div><dt>Distillery</dt><dd>{{ page.distillery }}</dd></div>{% endif %}
     {% if page.bottler %}<div><dt>Bottler</dt><dd>{{ page.bottler }}</dd></div>{% endif %}
-    {% if page.producer %}<div><dt>Producer</dt><dd>{{ page.producer }}</dd></div>{% endif %}
     {% if page.vintage %}<div><dt>Vintage</dt><dd>{{ page.vintage }}</dd></div>{% endif %}
-    {% if page.grapes %}<div><dt>Grapes</dt><dd>{{ page.grapes | join: ", " }}</dd></div>{% endif %}
     {% if page.age %}<div><dt>Age</dt><dd>{{ page.age }}</dd></div>{% endif %}
     {% if page.abv %}<div><dt>ABV</dt><dd>{{ page.abv }}%</dd></div>{% endif %}
     {% if page.cask %}<div><dt>Cask</dt><dd>{{ page.cask }}</dd></div>{% endif %}
-    {% if page.cuisine %}<div><dt>Cuisine</dt><dd>{{ page.cuisine }}</dd></div>{% endif %}
     {% if page.price %}<div><dt>Price</dt><dd>{{ page.price }}</dd></div>{% endif %}
     {% if page.date_tasted %}<div><dt>Tasted</dt><dd>{{ page.date_tasted | date: "%b %-d, %Y" }}</dd></div>{% endif %}
     <div><dt>Published</dt><dd>{{ page.date | date: "%b %-d, %Y" }}</dd></div>
