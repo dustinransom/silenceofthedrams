@@ -126,6 +126,91 @@
     });
   }
 
+
+  /* ---------- distillery tracker (built once; filters toggle visibility) ---------- */
+  var trackerBuilt = false;
+  function drawTracker() {
+    if (trackerBuilt) return; trackerBuilt = true;
+    var dEl = document.getElementById('distillery-data'), mount = document.getElementById('tracker');
+    if (!dEl || !mount) return;
+    var dists = JSON.parse(dEl.textContent), lookup = {};
+    dists.forEach(function (d) {
+      d.tried = []; lookup[d.name.toLowerCase()] = d;
+      String(d.aliases || '').split(';').forEach(function (a) { if (a.trim()) lookup[a.trim().toLowerCase()] = d; });
+    });
+    var keys = Object.keys(lookup).sort(function (a, b) { return b.length - a.length; });
+    raw.forEach(function (w) {
+      if (w.status === 'open' || w.score === null || w.score === undefined || String(w.score).trim() === '') return;
+      if ((w.country || '').trim() !== 'Scotland') return;
+      var d = (w.distillery || '').trim().toLowerCase(); if (!d) return;
+      var hit = lookup[d];
+      if (!hit) for (var i = 0; i < keys.length; i++) if (d.indexOf(keys[i] + ' ') === 0) { hit = lookup[keys[i]]; break; }
+      if (hit) {
+        var era = null;
+        if (hit.status === 'revived') {
+          var re = num(hit.reopened), dy = num(w.distilled), by = num(w.bottled);
+          era = dy ? (dy < re ? 'old' : 'new') : (by && by < re ? 'old' : null);
+        }
+        hit.tried.push({ name: w.name, score: parseFloat(w.score), era: era });
+      }
+    });
+    function count(list, st) { var l = list.filter(function (d) { return st.indexOf(d.status) > -1; }); return [l.filter(function (d) { return d.tried.length; }).length, l.length]; }
+    var a = count(dists, ['active', 'revived']), g = count(dists, ['ghost']);
+    var t = dists.filter(function (d) { return d.tried.length; }).length;
+    document.getElementById('tracker-tiles').innerHTML = [
+      ['All distilleries tried', t + '<span class="tile-unit"> of ' + dists.length + '</span>', t / dists.length],
+      ['Working', a[0] + '<span class="tile-unit"> of ' + a[1] + '</span>', a[0] / a[1]],
+      ['Ghosts (closed)', g[0] + '<span class="tile-unit"> of ' + g[1] + '</span>', g[0] / g[1]]
+    ].map(function (x) {
+      return '<div class="tile"><div class="tile-label">' + x[0] + '</div><div class="tile-value">' + x[1] + '</div>' +
+        '<div class="meter"><span style="width:' + Math.max(2, Math.round(x[2] * 100)) + '%"></span></div></div>';
+    }).join('');
+    var order = ['Islay', 'Campbeltown', 'Islands', 'Highland', 'Speyside', 'Lowland', 'Grain'];
+    mount.innerHTML = order.map(function (r) {
+      var list = dists.filter(function (d) { return d.region === r; });
+      if (!list.length) return '';
+      var n = list.filter(function (d) { return d.tried.length; }).length;
+      return '<div class="region-group" data-region="' + r + '"><h3>' + r + ' <span class="muted">' + n + ' of ' + list.length + '</span></h3><div class="chips">' +
+        list.map(function (d) {
+          var cls = 'chip' + (d.tried.length ? ' tried' : '') + (d.status !== 'active' ? ' ' + d.status : '');
+          var meta = d.tried.length
+            ? d.tried.length + ' tried · ' + fmt(mean(d.tried.map(function (w) { return w.score; }))).replace(/\.?0+$/, '')
+            : (d.kind === 'grain' && d.status === 'active' ? 'Grain' : '&nbsp;');
+          if (d.status === 'revived') {
+            var old = d.tried.some(function (w) { return w.era === 'old'; }), neu = d.tried.some(function (w) { return w.era === 'new'; });
+            meta = '<span class="era' + (old ? ' on' : '') + '">' + (old ? '✓' : '○') + ' Pre-' + d.closed + '</span> <span class="era' + (neu ? ' on' : '') + '">' + (neu ? '✓' : '○') + ' Revived</span>';
+          }
+          var icon = d.status === 'ghost' ? '<span class="dicon" title="Ghost distillery">👻</span>' : d.status === 'revived' ? '<span class="dicon" title="Revived distillery">🧟</span>' : '';
+          return '<div class="' + cls + '" data-i="' + dists.indexOf(d) + '"><span class="chip-name">' + icon + (d.tried.length ? '✓ ' : '') + esc(d.name) +
+            '</span><span class="chip-meta">' + meta + '</span></div>';
+        }).join('') + '</div></div>';
+    }).join('');
+    Array.prototype.forEach.call(mount.querySelectorAll('.chip'), function (c) {
+      var d = dists[+c.getAttribute('data-i')];
+      var status = d.status === 'ghost' ? '👻 Ghost: closed for good' : d.status === 'revived' ? '🧟 Revived: closed ' + d.closed + ', reopened ' + d.reopened : (d.kind === 'grain' ? 'Grain distillery' : 'Working');
+      var body = d.tried.length
+        ? d.tried.length + ' scored · average ' + fmt(mean(d.tried.map(function (w) { return w.score; }))) + '<br><span class="tip-list">' + list(d.tried) + '</span>' +
+          (d.status === 'revived' ? '<br><span class="tip-list">Old spirit (pre-' + d.closed + '): ' + (d.tried.some(function (w) { return w.era === 'old'; }) ? 'tried' : 'not yet') +
+            ' · New spirit: ' + (d.tried.some(function (w) { return w.era === 'new'; }) ? 'tried' : 'not yet') + '</span>' : '')
+        : 'Not tried yet';
+      hover(c, '<strong>' + esc(d.name) + '</strong> · ' + status + '<br>' + body);
+    });
+    var buttons = document.querySelectorAll('.tracker-filters button');
+    Array.prototype.forEach.call(buttons, function (b) {
+      b.addEventListener('click', function () {
+        Array.prototype.forEach.call(buttons, function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        var f = b.getAttribute('data-f');
+        Array.prototype.forEach.call(mount.querySelectorAll('.chip'), function (c) {
+          var d = dists[+c.getAttribute('data-i')], show = f === 'all' || (f === 'tried' && d.tried.length) ||
+            (f === 'untried' && !d.tried.length) || (f === 'ghost' && d.status !== 'active');
+          c.hidden = !show;
+        });
+        Array.prototype.forEach.call(mount.querySelectorAll('.region-group'), function (g) {
+          g.hidden = !g.querySelector('.chip:not([hidden])');
+        });
+      });
+    });
+  }
   function width(mount){ return Math.max(300, Math.floor(mount.clientWidth)); }
   function draw() {
   ['chart-scores','chart-regions','chart-dist-most','chart-dist-best','chart-bottling','chart-bottlers','chart-casks','chart-abv','chart-age','chart-years'].forEach(function(id){ var m=document.getElementById(id); if(m) m.innerHTML=''; });
@@ -141,10 +226,8 @@
   }
   var tiles = [
     ['Whiskies scored', data.length],
-    ['Average score', fmt(avgAll)],
     ['Distilleries', group('distillery').length],
-    ['Written reviews', Object.keys(data.reduce(function (o, w) { if (w.url) o[w.url] = 1; return o; }, {})).length],
-    ['Top region', regions[0].key + ' · ' + Math.round(100 * regions[0].n / data.length) + '%']
+    ['Average score', fmt(avgAll) + '<span class="tile-unit"> / 5</span>']
   ];
   document.getElementById('tiles').innerHTML = tiles.map(function (t) {
     return '<div class="tile"><div class="tile-label">' + t[0] + '</div><div class="tile-value">' + t[1] + '</div></div>';
@@ -268,13 +351,15 @@
       tip: '<strong>' + y.key + '</strong><br>' + y.n + ' whiskies · average ' + fmt(y.avg) };
   }), { title: 'Whiskies scored per year', labelW: 80 });
 
-  /* ---------- 9. hall of fame ---------- */
-  var fame = data.filter(function (w) { return w.score >= 4.5; }).sort(function (a, b) { return b.score - a.score; });
+  /* ---------- hall of fame (compact card) ---------- */
+  var fame = data.filter(function (w) { return w.score >= 4.5; }).sort(function (a, b) { return b.score - a.score || a.name.localeCompare(b.name); });
   document.getElementById('fame').innerHTML = fame.map(function (w) {
     var name = w.url ? '<a href="' + w.url + '">' + esc(w.name) + '</a>' : esc(w.name);
-    return '<li><span class="fame-name">' + name + '</span><span class="meta">' + esc(w.distillery || 'Blend') + ' · ' + esc(w.region) +
-      '</span><span class="score-sm">' + w.score + '</span></li>';
+    return '<li><span class="fame-score">' + w.score + '</span><span class="fame-name">' + name + '</span></li>';
   }).join('');
+
+  /* ---------- distillery tracker ---------- */
+  drawTracker();
   }
   draw();
   var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(draw,150); });

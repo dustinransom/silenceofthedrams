@@ -1,0 +1,25 @@
+.tile-unit { font-family: var(--sans); font-size: .9rem; font-weight: 400; color: var(--muted); }
+.fame-card { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: .8rem 1rem .6rem; margin-top: .75rem; }
+.fame-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .8rem; margin-bottom: .4rem; }
+.fame-list { list-style: none; margin: 0; padding: 0; columns: 2 300px; column-gap: 2rem; }
+.fame-list li { display: flex; gap: .6rem; align-items: baseline; padding: .28rem 0; border-top: 1px solid var(--line); break-inside: avoid; font-size: .9rem; line-height: 1.35; }
+.fame-score { flex: 0 0 1.8rem; font-weight: 600; color: var(--ink); }
+.fame-name a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--amber); }
+.tiles-3 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: .5rem; }
+.meter { height: 6px; background: #efe6da; border-radius: 3px; margin-top: .55rem; overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--amber); border-radius: 3px; }
+.tracker-filters { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.1rem 0 .4rem; }
+.tracker-filters button { font: inherit; font-size: .85rem; padding: .35rem .8rem; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 999px; cursor: pointer; }
+.tracker-filters button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.region-group h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 1.3rem 0 .5rem; }
+.region-group h3 .muted { font-family: var(--sans); font-size: .8rem; font-weight: 400; margin-left: .35rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+.chip { display: inline-block; font-size: .82rem; padding: .22rem .6rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted); line-height: 1.4; }
+.chip.tried { background: var(--amber); border-color: var(--amber); color: #fff; font-weight: 500; }
+.chip.ghost, .chip.revived { border-style: dashed; border-color: #b9ad9f; }
+.chip.ghost.tried, .chip.revived.tried { border-style: solid; border-color: var(--amber-dark); background: var(--amber-dark); }
+.chip small { font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; opacity: .8; margin-left: .15rem; }
+.chip[hidden], .region-group[hidden] { display: none; }
+.legend { margin-top: 1.2rem; font-size: .8rem; }
+.legend .chip { font-size: .75rem; }
+.chart-block p.legend { margin-top: 1.4rem; }

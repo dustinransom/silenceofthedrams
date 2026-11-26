@@ -24,6 +24,29 @@ Substack is a periodic roundup newsletter, not a per-review channel.
 3. Create it as a **Substack draft only**; Dustin publishes, since the subscriber email can't be unsent.
 4. After he publishes, set `substack_url` on each included review to the roundup's URL.
 
+## Quick reviews (the default for whisky; `templates/quick.md`)
+Dustin usually sends these from his phone mid-tasting. Expect shorthand like:
+```
+Quick: Springbank 15
+46%, ex-bourbon/sherry, official, $110        (any facts he has)
+N: ...  P: ...  F: ...                         (optional one-liners)
+3.5 · "mental image"
+take: one-to-three sentence verdict
+at: occasion / where
+```
+1. Copy `templates/quick.md` to `_reviews/whisky/YYYY-MM-DD-slug.md`. Use today's date for `date`
+   and `date_tasted` unless he gives one. Keep `published: false`.
+2. Fill in only what he sent and leave the rest blank. Don't look up ABV, cask etc. List what's
+   still blank at the end of your reply so he knows what to fill in later.
+3. Body = his take (tidied, his words) plus the optional `Nose · Palate · Finish` line. Remove
+   the template's placeholder text and delete the N/P/F line if he gave none. Keep it short.
+4. Commit + push the draft. It's safe because `published: false` keeps it off the site.
+   Don't add the whisky log row yet (the archive would link to a hidden page).
+5. When he says "finish <name>": fill in the facts he gives, delete the `published` line, add/update
+   the `_data/whisky_log.csv` row with `review` set to the slug, then commit + push.
+   "What drafts do I have?" = list reviews with `published: false`.
+Use the full `templates/whisky.md` only when he asks for a long-form review.
+
 ## Whisky log (`_data/whisky_log.csv`)
 Every whisky Dustin has scored, one row each, imported from his Google Sheet "Whisky Review Archive".
 It drives the archive page. Columns: order (sheet order, 1 = newest), name, distillery, bottler,

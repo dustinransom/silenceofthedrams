@@ -12,6 +12,7 @@ but this repo is the source of truth. Substack is used for occasional roundup em
 | `_reviews/whisky/`, `_reviews/wine/`, `_reviews/dining/` | One markdown file per review. **This is the archive.** |
 | `_data/whisky_log.csv` | Every whisky scored (from the Google Sheet), plus open bottles. Drives the archive page. |
 | `stats.html`, `assets/js/stats.js` | Stats page; charts are drawn in the browser from the whisky log, so they update whenever the log does. Clean-up rules (Bruichladdich brands, regions, cask buckets) live at the top of `stats.js`. |
+| `_data/scotch_distilleries.csv` | Scottish distillery list for the stats page tracker (working, ghost, revived; `aliases` maps brand names like Arran → Lochranza). |
 | `templates/` | Blank templates for each review type (not published). |
 | `imports/` | Drop the WordPress export here for conversion (not published). |
 | `index.html` | Landing page (latest 6 reviews). |
