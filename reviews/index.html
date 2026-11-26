@@ -6,16 +6,11 @@ title: Archive
 <p class="muted">Every whisky I've scored. Names in bold have a written review.</p>
 <div class="filters">
   <input id="q" type="search" placeholder="Search name, distillery, bottler, region, cask…">
-  <select id="sort">
-    <option value="date">Newest first</option>
-    <option value="score">Highest score</option>
-    <option value="name">A–Z</option>
-  </select>
-  <label class="check"><input id="written" type="checkbox"> Written reviews only</label>
+  <label class="check"><input id="written" type="checkbox">Written reviews only</label>
   <span id="count" class="muted"></span>
 </div>
 <table class="archive">
-  <thead><tr><th>Name</th><th>Region</th><th class="num">Score</th><th class="num">Year</th></tr></thead>
+  <thead><tr><th><button type="button" data-sort="name">Name</button></th><th><button type="button" data-sort="region">Region</button></th><th class="num"><button type="button" data-sort="score">Score</button></th><th class="num"><button type="button" data-sort="date" aria-sort="descending">Year</button></th></tr></thead>
   <tbody id="rows">
   {% assign reviews_by_slug = site.reviews %}
   {% for w in site.data.whisky_log %}{% if w.status != "open" %}
@@ -23,7 +18,7 @@ title: Archive
     {% assign scale = w.scale | default: site.score_max %}
     {% assign norm = w.score | times: 5.0 | divided_by: scale %}
     {% assign ord = 10000 | minus: w.order %}
-    <tr data-written="{% if rv %}1{% else %}0{% endif %}" data-score="{{ norm }}" data-date="{{ w.year | default: '0000' }}-{{ ord | prepend: '0000' | slice: -5, 5 }}" data-name="{{ w.name | downcase | escape }}" data-search="{{ w.name | downcase | escape }} {{ w.distillery | downcase | escape }} {{ w.bottler | downcase | escape }} {{ w.country | downcase }} {{ w.region | downcase }} {{ w.cask | downcase | escape }}">
+    <tr data-written="{% if rv %}1{% else %}0{% endif %}" data-score="{{ norm }}" data-date="{{ w.year | default: '0000' }}-{{ ord | prepend: '0000' | slice: -5, 5 }}" data-name="{{ w.name | downcase | escape }}" data-region="{{ w.region | default: w.country | downcase | escape }}" data-search="{{ w.name | downcase | escape }} {{ w.distillery | downcase | escape }} {{ w.bottler | downcase | escape }} {{ w.country | downcase }} {{ w.region | downcase }} {{ w.cask | downcase | escape }}">
       <td>{% if rv %}<a class="written" href="{{ rv.url | relative_url }}">{{ w.name }}</a>{% else %}{{ w.name }}{% endif %}</td>
       <td class="muted">{{ w.region | default: w.country }}</td>
       <td class="num">{{ w.score }}{% if w.scale != "" and w.scale %}<span class="muted">/{{ w.scale }}</span>{% endif %}</td>

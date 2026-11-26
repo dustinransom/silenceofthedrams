@@ -358,6 +358,8 @@
 
   /* ---------- hall of fame (compact card) ---------- */
   var fame = data.filter(function (w) { return w.score >= 4.5; }).sort(function (a, b) { return b.score - a.score || a.name.localeCompare(b.name); });
+  var fameEl = document.getElementById('fame');
+  if (fameEl) fameEl.style.gridTemplateRows = window.matchMedia('(min-width: 640px)').matches ? 'repeat(' + Math.ceil(fame.length / 2) + ', auto)' : '';
   document.getElementById('fame').innerHTML = fame.map(function (w) {
     var name = w.url ? '<a href="' + w.url + '">' + esc(w.name) + '</a>' : esc(w.name);
     return '<li><span class="fame-score">' + w.score + '</span><span class="fame-name">' + name + '</span></li>';
