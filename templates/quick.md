@@ -16,7 +16,6 @@ age: ""              # "15 years" or "NAS"
 abv:                 # number, e.g. 46
 cask: ""
 score:               # out of 5, half points OK
-occasion: ""         # where/with whom, e.g. "Feis Ile tasting at Jim's"
 mental_image: ""
 whiskybase: ""       # URL, optional
 substack_url: ""

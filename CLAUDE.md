@@ -32,7 +32,6 @@ Quick: Springbank 15
 N: ...  P: ...  F: ...                         (optional one-liners)
 3.5 · "mental image"
 take: one-to-three sentence verdict
-at: occasion / where
 ```
 1. Copy `templates/quick.md` to `_reviews/whisky/YYYY-MM-DD-slug.md`. Use today's date for `date`
    unless he gives one. Quick reviews have no price or tasted date. Keep `published: false`.
