@@ -7,7 +7,6 @@ type: whisky
 format: quick
 date: 2026-11-26
 permalink: /barrel-and-bottle-australian-single-malt/
-published: false     # DRAFT. Delete this line to publish.
 distillery: "Unknown"
 bottler: "Barrel and Bottle"
 region: "Unknown"
