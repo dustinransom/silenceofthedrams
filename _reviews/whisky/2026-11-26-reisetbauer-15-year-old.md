@@ -13,7 +13,7 @@ region: ""
 country: Austria
 age: "15 years"
 abv: 48
-cask: ""
+cask: "Trockenbeerenauslese wine cask"
 score: 3.5
 mental_image: "Shady doctor's candy cabinet."
 whiskybase: "https://www.whiskybase.com/whiskies/whisky/71423/reisetbauer-15-year-old"
