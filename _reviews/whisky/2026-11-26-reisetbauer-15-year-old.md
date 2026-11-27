@@ -7,7 +7,6 @@ type: whisky
 format: quick
 date: 2026-11-26
 permalink: /reisetbauer-15-year-old/
-published: false     # DRAFT. Delete this line to publish.
 distillery: "Reisetbauer"
 bottler: "Official"  # "Official" or the independent bottler's name
 region: "Austria"
