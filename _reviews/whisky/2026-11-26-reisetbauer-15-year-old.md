@@ -9,11 +9,11 @@ date: 2026-11-26
 permalink: /reisetbauer-15-year-old/
 published: false     # DRAFT. Delete this line to publish.
 distillery: "Reisetbauer"
-bottler: ""          # "Official" or the independent bottler's name
-region: ""
-country: ""
+bottler: "Official"  # "Official" or the independent bottler's name
+region: "Austria"
+country: Austria
 age: "15 years"
-abv:                 # number, e.g. 46
+abv: 48
 cask: ""
 score: 3.5
 mental_image: "Shady doctor's candy cabinet."
