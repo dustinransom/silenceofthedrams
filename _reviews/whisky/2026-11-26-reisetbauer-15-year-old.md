@@ -9,7 +9,7 @@ date: 2026-11-26
 permalink: /reisetbauer-15-year-old/
 distillery: "Reisetbauer"
 bottler: "Official"  # "Official" or the independent bottler's name
-region: "Austria"
+region: ""
 country: Austria
 age: "15 years"
 abv: 48

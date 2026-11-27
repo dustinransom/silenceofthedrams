@@ -1,3 +1,3 @@
-{%- assign _r = include.region | strip -%}{%- if _r == "Unknown" or _r == "unknown" -%}{%- assign _r = "" -%}{%- endif -%}
+{%- assign _r = include.region | strip -%}{%- if _r == "Unknown" or _r == "unknown" or _r == include.country -%}{%- assign _r = "" -%}{%- endif -%}
 {%- assign _c = include.country | strip -%}{%- if _c == "United States" -%}{%- assign _c = "USA" -%}{%- endif -%}
 {%- if _c == "" or _c == "Scotland" -%}{{ _r }}{%- elsif _r != "" -%}{{ _r }}, {{ _c }}{%- else -%}{{ _c }}{%- endif -%}
