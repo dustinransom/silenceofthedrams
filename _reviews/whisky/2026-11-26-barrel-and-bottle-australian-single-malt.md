@@ -9,7 +9,7 @@ date: 2026-11-26
 permalink: /barrel-and-bottle-australian-single-malt/
 distillery: "Unknown"
 bottler: "Barrel and Bottle"
-region: "Unknown"
+region: ""
 country: Australia
 age: "Unknown"
 abv: 52

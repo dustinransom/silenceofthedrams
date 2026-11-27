@@ -20,7 +20,7 @@ title: Archive
     {% assign ord = 10000 | minus: w.order %}
     <tr data-written="{% if rv %}1{% else %}0{% endif %}" data-score="{{ norm }}" data-date="{{ w.year | default: '0000' }}-{{ ord | prepend: '0000' | slice: -5, 5 }}" data-name="{{ w.name | downcase | escape }}" data-region="{{ w.region | default: w.country | downcase | escape }}" data-search="{{ w.name | downcase | escape }} {{ w.distillery | downcase | escape }} {{ w.bottler | downcase | escape }} {{ w.country | downcase }} {{ w.region | downcase }} {{ w.cask | downcase | escape }}">
       <td>{% if rv %}<a class="written" href="{{ rv.url | relative_url }}">{{ w.name }}</a>{% else %}{{ w.name }}{% endif %}</td>
-      <td class="muted">{{ w.region | default: w.country }}</td>
+      <td class="muted">{% include place.html region=w.region country=w.country %}</td>
       <td class="num">{{ w.score }}{% if w.scale != "" and w.scale %}<span class="muted">/{{ w.scale }}</span>{% endif %}</td>
       <td class="muted num">{{ w.year }}</td>
     </tr>

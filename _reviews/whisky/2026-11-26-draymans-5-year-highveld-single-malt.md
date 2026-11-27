@@ -9,7 +9,7 @@ date: 2026-11-26
 permalink: /draymans-5-year-highveld-single-malt/
 distillery: "Drayman's"
 bottler: "Official"
-region: "Unknown"
+region: ""
 country: South Africa
 age: "5 years"
 abv: 43

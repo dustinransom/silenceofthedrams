@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="review">
-  <p class="eyebrow">{% if page.region != "" and page.region %}{{ page.region }}{% if page.country != "" and page.country and page.country != "Scotland" %} · {{ page.country }}{% endif %}{% else %}{{ page.country }}{% endif %}</p>
+  <p class="eyebrow">{% include place.html region=page.region country=page.country %}</p>
   <h1>{{ page.title }}</h1>
   {% assign scale = page.score_scale | default: site.score_max %}
   {% if page.score %}<p class="score">{{ page.score }}<span>/ {{ scale }}</span></p>{% elsif page.scores %}<p class="score">{{ page.scores | join: " · " }}<span>/ {{ scale }} each</span></p>{% endif %}
