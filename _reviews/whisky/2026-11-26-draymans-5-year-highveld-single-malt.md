@@ -2,19 +2,19 @@
 # QUICK WHISKY REVIEW: tweet-length. Most fields can stay blank.
 # Drafted from phone notes with published: false (hidden from the site).
 # To finish: fill in any blanks, tidy the take, then delete the "published" line.
-title: "Drayman's 5 Year Old"
+title: "Drayman's 5 Year, Highveld Single Malt"
 type: whisky
 format: quick
 date: 2026-11-26
-permalink: /draymans-5-year-old/
+permalink: /draymans-5-year-highveld-single-malt/
 published: false
 distillery: "Drayman's"
-bottler: ""          # "Official" or the independent bottler's name
-region: ""
+bottler: "Official"
+region: "Unknown"
 country: South Africa
 age: "5 years"
 abv: 43
-cask: ""
+cask: "French oak"
 score: 3.5
 mental_image: "Macvin du South Africa."
 whiskybase: "https://www.whiskybase.com/whiskies/whisky/260293/draymans-05-year-old"
