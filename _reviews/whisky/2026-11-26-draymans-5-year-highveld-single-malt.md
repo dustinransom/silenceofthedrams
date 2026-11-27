@@ -7,7 +7,6 @@ type: whisky
 format: quick
 date: 2026-11-26
 permalink: /draymans-5-year-highveld-single-malt/
-published: false
 distillery: "Drayman's"
 bottler: "Official"
 region: "Unknown"
