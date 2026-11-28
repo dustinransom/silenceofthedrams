@@ -1,0 +1,1 @@
+How to move a WordPress blog to a static Jekyll site, script a content import in Python, and draw stats charts in the browser straight from a CSV.
