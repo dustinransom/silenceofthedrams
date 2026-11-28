@@ -19,7 +19,7 @@ score:               # out of 5, half points OK
 mental_image: ""
 whiskybase: "https://www.whiskybase.com/whiskies/whisky/298755"
 substack_url: ""
-tags: ["american single cask", "sd scotch club"]
+tags: ["american single cask"]
 ---
 **Nose:** …  
 **Palate:** …  

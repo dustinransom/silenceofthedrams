@@ -50,10 +50,12 @@ Use the full `templates/whisky.md` only when he asks for a long-form review.
 Every whisky Dustin has scored, one row each, imported from his Google Sheet "Whisky Review Archive".
 It drives the archive page. Columns: order (sheet order, 1 = newest), name, distillery, bottler,
 country, region, abv, cask, age, distilled, bottled, score (out of 5), scale (blank = 5; "10" for rows
-not yet rescored), mental_image, year, occasion, whiskybase, review (permalink slug of a written review,
+not yet rescored), mental_image, year, whiskybase, review (permalink slug of a written review,
 or blank), status ("open" = bottle open but not yet scored).
 - When adding a written whisky review, also add/update its row in the log and set `review` to its slug.
 - Score-only tastings just get a row (no review file). New rows go at the top (shift `order`).
+- The sheet's "Other Notes" column (tasting events, club names) is deliberately NOT copied into this public file.
+  For event-based roundups, read event names from the Google Sheet. Don't add club/location tags to reviews.
 
 ## Rules
 - One file per review; don't restructure the folders without asking.
